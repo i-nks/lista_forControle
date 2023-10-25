@@ -6,11 +6,17 @@
     */
 
     //ENTRADA
-
+    const nmr = Number(prompt(`informe um número.`).trim().replace(",","."));
+    let msg = "O número é primo."
 
     //PROCESSAMENTO
-
+    for (i = 2; i < nmr; i++) {
+        if (nmr % i == 0) {
+            msg = "O número não é primo."
+        }
+    }
 
     //SAÍDA
+    document.write(msg);
 
 </script>

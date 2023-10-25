@@ -6,11 +6,20 @@
     */
 
     //ENTRADA
+    const inicial = 80000
+    let anos = 0
+    msm = ''
 
     
     //PROCESSAMENTO
-
+    for (i = 0; i < inicial; i++) {
+        anos++
+        let perc = (anos * 0.03)
+        if (perc * inicial <= 200000) {
+            msn = `Faltaŕa ${anos} anos.`
+        }
+    }
     
     //SAÍDA
-
+    document.write(msn)
 </script>

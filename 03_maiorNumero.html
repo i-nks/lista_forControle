@@ -7,11 +7,17 @@
     */
 
     //ENTRADA
+    let listaNmrs = []
 
-    
     //PROCESSAMENTO
+    for (nmr = 1; nmr <= 5; nmr++) {
+        const numero = parseInt(prompt(`Informe o número ${nmr}.`).trim().replace(",","."));
 
-    
+        listaNmrs.push(numero);
+        listaNmrs.sort((a, b) => b - a);
+    }
+
     //SAÍDA
+    document.write(`O maior número da lista é ${listaNmrs[0]}.`);
 
 </script>

@@ -6,11 +6,17 @@
     */
 
     //ENTRADA
-
+    let listaImpares = []
 
     //PROCESSAMENTO
+    for (nmr = 1; nmr <= 50; nmr++) {
+        if (nmr % 2 !== 0) {
 
+            listaImpares.push(nmr);
+        }
+    }
 
     //SAÍDA
+    document.write(listaImpares.join(" - "));
 
 </script>

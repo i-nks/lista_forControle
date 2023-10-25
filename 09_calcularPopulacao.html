@@ -6,11 +6,24 @@
     */
 
     //ENTRADA
+    let popu1 = 50000;
+    let perc1 = 0.015;
+    let anos1 = 5;
 
-    
+    let popu2 = 50000;
+    let perc2 = 0.015;
+    let anos2 = 10;
+
     //PROCESSAMENTO
-    
+    for (i = 1; i <= anos1; i++) {
+        popu1 += popu1 * perc1;
+    }
+
+    for (i = 1; i <= anos2; i++) {
+        popu2 += popu2 * perc2;
+    }
 
     //SAÍDA
+    document.write(`A população da cidade será de <b>${popu1.toFixed(0)}</b> habitantes. <br>A população da cidade será de <b>${popu2.toFixed(0)}</b> habitantes.`);
 
 </script>
